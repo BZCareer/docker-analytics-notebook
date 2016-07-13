@@ -1,0 +1,26 @@
+{
+	"apiVersion": "v1",
+	"kind": "Pod",
+	"metadata": {
+		"name": "spark-notebook",
+		"labels": {
+			"name": "spark-notebook-d"
+		}
+	},
+	"spec": {
+		"containers": [{
+			"name": "spark-notebook-service",
+			"image": "docker.io/bzcareer/docker-analytics-notebook",
+			"ports": [{
+				"containerPort": 8080
+			}, {
+				"containerPort": 9999
+			}, {
+				"containerPort": 7077
+			},{
+        "containerPort": 22
+
+        }]
+		}]
+	}
+}

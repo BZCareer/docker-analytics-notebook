@@ -1,0 +1,30 @@
+{
+	"kind": "Service",
+	"apiVersion": "v1",
+	"metadata": {
+		"name": "spark-notebook-d"
+	},
+	"spec": {
+		"type": "LoadBalancer",
+		"ports": [{
+			"name": "zeppelin-notebook-ui",
+			"port": 9999,
+			"targetPort": 9999
+		}, {
+			"name": "spark-standalone-web-ui",
+			"port": 8080,
+			"targetPort": 8080
+		}, {
+			"name": "spark-master-port",
+			"port": 7077,
+			"targetPort": 7077
+		}, {
+			"name": "spark-ssh-port",
+			"port": 22,
+			"targetPort": 22
+		}],
+		"selector": {
+			"name": "spark-notebook-d"
+		}
+	}
+}
