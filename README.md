@@ -4,6 +4,10 @@ Apache Spark And Zeppelin Notebook On Docker
 In this repository you will find a docker file which will allow for running Apache Spark and Zeppelin inside docker containers or inside kubernetes.
 
 
+## Screencast ( Demo on Kubernetes/Openshift Origin v3 )
+
+![alt tag](https://media.githubusercontent.com/media/BZCareer/docker-analytics-notebook/master/Screencast-SparkNotebook-3.gif)
+
 ##Pull the image from Docker Repository
 ```
 docker pull  bzcareer/docker-analytics-notebook
@@ -69,4 +73,3 @@ This is just an experiment so I hope you do not use in production.
 ```
 Apache Spark v1.6.1 and Apache Zeppelin v0.6.0  on Ubuntu with Java 8
 ```
- 
